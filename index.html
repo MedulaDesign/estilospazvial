@@ -12,6 +12,17 @@
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="http://pazvial.cl/css/estilos.css">
 <script src="http://pazvial.cl/_/js/libs/modernizr.custom.39283.js"></script>
+<style>
+code{
+	border: 1px solid #555;
+	background-color: #EEE;
+	padding: 1em;
+	display: block;
+}
+pre{
+	white-space: pre-wrap
+}
+</style>
 </head>
 <body class="interior">
 <div id="header-container">
@@ -99,9 +110,86 @@
 		<figure class="flotaIzquierda"><img src="http://pazvial.cl/imgs/content/paz_vial_piezascreadasamano3.jpg" width="309" height="208" alt="Plato cuadrado de cerámica húmeda, saliendo del molde."><br>
 			<figcaption>Plato cuadrado, aún húmedo, saliendo del molde.</figcaption>
 	  </figure>
+	  <hr>
+	  <h1>Formularios</h1>
+	  <h2>Markup pelado</h2>
+	  <form action="./">
+	  	<label for="nombre1">Etiqueta 1</label>
+	  	<input type="text" name="nombre1" id="nombre1">
+	  	<label for="nombre2">Etiqueta 2</label>
+	  	<input type="text" name="nombre2" id="nombre2">
+	  	<label for="nombre3">Etiqueta 3</label>
+	  	<input type="text" name="nombre3" id="nombre3">
+	  	<label for="nombre4">Etiqueta 4</label>
+	  	<input type="text" name="nombre4" id="nombre4">
+	  	<label for="nombre5">Etiqueta 5</label>
+	  	<input type="text" name="nombre5" id="nombre5">
+		<label for="nombre6">Etiqueta Checkbox</label>
+	  	<input type="checkbox" name="nombre6" id="nombre6">
+	  	<input type="button" name="nombre6" id="nombre6" value="Input botón">
+	  	<button>Button</button>
+	  	<textarea name="nombre7" id="nombre7" cols="30" rows="10"></textarea>
+	  </form>
+	  <h2>Markup estilo pazvial</h2>
+	  <form action="./" class="regular">
+	  	<p>Los formularios deben tener la clase "regular"</p>
+	  	<p>Los elementos de los formularios van dentro de una lista UL</p>
+	  	<code>
+	  		<pre>&lt;form class="regular">
+	&lt;ul>
+		&lt;li>
+			&lt;label for="idDelInput">Etiqueta&lt;/label>
+			&lt;input type="text" id="idDelInput">
+		&lt;/li>
+	&lt;/ul>
+&lt;/form></pre>
+	  	</code>
+	  	<ul>
+	  	<li><label for="nombre1">Etiqueta 1</label>
+	  		  	<input type="text" name="nombre1" id="nombre1"></li>
+	  	<li><label for="nombre2">Etiqueta 2</label>
+	  		  	<input type="text" name="nombre2" id="nombre2"></li>
+	  	<li><label for="nombre3">Etiqueta 3</label>
+	  		  	<input type="text" name="nombre3" id="nombre3"></li>
+	  	<li><label for="nombre4">Etiqueta 4</label>
+	  		  	<input type="text" name="nombre4" id="nombre4"></li>
+	  	<li><label for="nombre5">Etiqueta 5</label>
+	  		  	<input type="text" name="nombre5" id="nombre5"></li>
+		<li><label for="nombre6">Etiqueta Checkbox</label>
+				<input type="checkbox" name="nombre6" id="nombre6"></li>
+		<li><input type="checkbox" name="nombre6" id="nombre6">
+				<label for="nombre8">Otra Etiqueta Checkbox</label></li>
+	  	<li><input type="button" name="nombre8" id="nombre8" value="Input botón"></li>
+	  	<li><button>Button</button></li>
+	  	<li><textarea name="nombre7" id="nombre7" cols="30" rows="10"></textarea></li>
+	  	</ul>
+	  	<hr>
+	  	<p>Para los elementos del formulario que no necesitan fondo, se puede agregar la clase "<strong>transparente</strong>" al <strong>li</strong> </p>
+	  	<code>
+	  		<pre>&lt;li class="transparente">
+	&lt;button>Button&lt;/button>
+&lt;/li></pre>
+	  	</code>
+	  	<ul>
+	  		<li class="transparente"><button>Button</button></li>
+	  	</ul>
+	  	<hr>
+	  	<p>Para los elementos que requieren que el <kbd>&lt;label></kbd> quede dentro del rectángulo, como <kbd>checkbox</kbd> y <kbd>radio</kbd>, al <kbd>li</kbd> se le agrega la case "<strong>dentro</strong>" </p>
+	  	<code>
+	  		<pre>&lt;li class="dentro">
+	&lt;label for="nombre6">Etiqueta Checkbox&lt;/label>
+	&lt;input type="checkbox" name="nombre6" id="nombre6">
+&lt;/li></pre>
+	  	</code>
+	  	<ul>
+	  		<li class="dentro"><label for="nombre6">Etiqueta Checkbox</label>
+				<input type="checkbox" name="nombre6" id="nombre6"></li>
+		<li class="dentro"><input type="checkbox" name="nombre6" id="nombre6">
+				<label for="nombre8">Otra Etiqueta Checkbox</label></li>
+	  	</ul>
+	  </form>
 	  <p>&nbsp;</p>
-	  <p>&nbsp;</p>
-    </article>
+    	
   </div>
 </div>
 <div id="footer-container">

@@ -1,0 +1,34 @@
+{
+  "name": "estilospazvial",
+  "version": "2.0.0",
+  "homepage": "http://estilos.pazvial.cl",
+  "authors": [
+    "B. Agustin Amenabar L. <baamenabar@gmail.com>"
+  ],
+  "description": "Guía de estilos para Paz Vial",
+  "keywords": [
+    "ecommerce",
+    "store",
+    "shop",
+    "ceramic",
+    "pottery",
+    "decoration",
+    "mobile",
+    "first",
+    "style guide"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "html5shiv": "~3.7.2"
+  },
+  "devDependencies": {
+    "respondJs": "~1.4.2"
+  }
+}

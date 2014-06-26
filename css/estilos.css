@@ -1,0 +1,746 @@
+@import url("http://fonts.googleapis.com/css?family=Josefin+Slab:400italic,400,700|Open+Sans:400italic,700italic,400,700");
+/*!relative path to source SCSS file: ../sass/styles.css */
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2014 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Antipixel
+ * License URL: http://www.fontspring.com/fflicense/antipixel
+ *
+ *
+ */
+@font-face {
+  font-family: 'aracne_regularregular';
+  src: url('ARACNE_regular-webfont.eot');
+  src: url('ARACNE_regular-webfont.eot?#iefix') format('embedded-opentype'), url('ARACNE_regular-webfont.svg#aracne_regularregular') format('svg'), url('ARACNE_regular-webfont.woff') format('woff'), url('ARACNE_regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal; }
+
+.sans {
+  font-family: "Open Sans", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.serif {
+  font-family: "Josefin Slab", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif; }
+
+.display {
+  font-family: "aracne_regularregular", Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; }
+
+.fAzul {
+  background-color: #141F78; }
+
+.cAzul {
+  color: #141F78; }
+
+.fGrisClaro {
+  background-color: #F0F0F0; }
+
+.cGrisClaro {
+  color: #F0F0F0; }
+
+.fGrisOscuro {
+  background-color: #333333; }
+
+.cGrisOscuro {
+  color: #333333; }
+
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden], template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+/*
+** Mejoras básicas a los estilos por defecto de los navegadores.
+*/
+body {
+  /* http://css-tricks.com/snippets/css/font-stacks/ */
+  /* Helvetica/Arial-based sans serif stack */
+  font-family: "Open Sans", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+pre, code, kbd, samp {
+  /* Monospace stack */
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace; }
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img, object, embed {
+  max-width: 100%; }
+
+/* Estilos de un <hr> emparejados */
+hr {
+  display: block;
+  height: 0;
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 1em 0;
+  padding: 0; }
+
+/* Alinear los input y radio a la caja del texto y no en el baseline. */
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: middle; }
+
+/* las listas dentro de NAV y las UL dentro de FORM en general no usan estilos de lista */
+nav ul, nav ol, form ul {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0; }
+
+/* hand cursor on clickable elements */
+.clickable, label {
+  cursor: pointer; }
+
+/* Los bloquotes deben diferenciarse un poco más del resto del texto */
+blockquote {
+  border-left: 3px solid #BBB;
+  margin-left: 0.5em;
+  padding: 0 0.5em; }
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+  body, select, input, textarea, a, a:link, a:visited {
+    color: #000; } }
+
+/*
+** Mejoras de opiniones más arbitrarias a los estilos por defecto de los navegadores.
+** tiene algunas clases helpers (.clickable)
+*/
+/* títulos más prominentes y nunca menores que el cuerpo de texto base */
+h1 {
+  font-size: 2.25em; }
+
+h2 {
+  font-size: 1.75em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1.25em; }
+
+h5 {
+  font-size: 1.17em; }
+
+h6 {
+  font-size: 1em;
+  text-transform: uppercase; }
+
+/* Los encabezados deben estar má cerca del párrafo que encabezan que del anterior */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em; }
+
+/* se ve feo si llega hasta la orilla*/
+hr {
+  margin: 1em; }
+
+/* Las tablas deben tener estilos mínimos*/
+th, thead td {
+  font-weight: bold; }
+
+td, th {
+  padding: 0.375em;
+  border-bottom: 1px solid #999; }
+
+/*
+** Utilidades y clases no semánticas
+*/
+/* let's clear some floats */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+/* other non-semantic helper classes 
+Otras clases de ayuda no-semántica (OHHHH el horroooor!)*/
+.limpia, .clean {
+  clear: both; }
+
+.flotaIzquierda {
+  float: left; }
+
+.flotaDerecha {
+  float: right; }
+
+.aIzquierda {
+  text-align: left; }
+
+.aDerecha {
+  text-align: right; }
+
+.hidden, .oculto {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screen readers: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/* márgenes rápidos */
+.mt1 {
+  margin-top: 0.5em; }
+
+.mt2 {
+  margin-top: 1em; }
+
+.mt3 {
+  margin-top: 1.5em; }
+
+.mt4 {
+  margin-top: 2em; }
+
+.mb1 {
+  margin-bottom: 0.5em; }
+
+.mb2 {
+  margin-bottom: 1em; }
+
+.mb3 {
+  margin-bottom: 1.5em; }
+
+.mb4 {
+  margin-bottom: 2em; }
+
+.ml1 {
+  margin-left: 0.5em; }
+
+.ml2 {
+  margin-left: 1em; }
+
+.ml3 {
+  margin-left: 1.5em; }
+
+.ml4 {
+  margin-left: 2em; }
+
+.mr1 {
+  margin-right: 0.5em; }
+
+.mr2 {
+  margin-right: 1em; }
+
+.mr3 {
+  margin-right: 1.5em; }
+
+.mr4 {
+  margin-right: 2em; }
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  body, select, input, textarea, a, a:link, a:visited {
+    color: #000; }
+  a, a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  a[href^="#"]:after, a[href^="javascript:"]:after {
+    content: ""; }
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+  tr, img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+  h2, h3 {
+    page-break-after: avoid; } }
+
+/*
+** Y aquí empiezan las mañas 
+*/
+/* casi negro  para el texto*/
+body, select, input, textarea {
+  color: #333; }
+
+a, a:link {
+  color: #03f; }
+
+a:visited {
+  color: #141F78; }
+
+a:hover {
+  color: #69f; }
+
+a:active {
+  color: #009BD8; }
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection {
+  background: #141F78;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #141F78;
+  color: #fff;
+  text-shadow: none; }
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {
+  -webkit-tap-highlight-color: #141F78; }
+
+/* figure y fig-caption */
+figure {
+  border: 1px solid #BBB;
+  padding: 1em;
+  margin: 1em 0;
+  display: inline-block;
+  /* inline-block tiene algunos problemas cuando el figcaption es más grande que la imagen */ }
+
+figcaption {
+  color: #555;
+  /* Modern Georgia-based serif stack */
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif; }
+
+dl {
+  margin: 0.5em 0;
+  padding: 0;
+  overflow: hidden; }
+
+dt {
+  clear: left;
+  float: left;
+  width: 33%;
+  margin: 0 0 0.5em 0;
+  font-weight: bold; }
+
+dd {
+  float: left;
+  width: 66%;
+  margin: 0 0 0.5em 0; }
+
+@media (min-width: 37em) {
+  dt {
+    width: 25%; }
+  dd {
+    width: 74%; } }
+
+@media (min-width: 49em) {
+  dt {
+    width: 20%; }
+  dd {
+    width: 79%; } }
+
+/*
+	LAYOUT
+	Aquí pondremos cosas del layout general
+	* header
+	* cuerpo
+	* páginas generales
+	* contenedores de listas
+	* footer
+*/
+.corporis {
+  padding: 0 0.5em; }
+
+@media (min-width: 21em) {
+  .corporis {
+    padding: 0 1em; } }
+
+@media (min-width: 37em) { }
+
+@media (min-width: 49em) {
+  .wrapper {
+    max-width: 61em;
+    margin: 0 auto; } }
+
+/*
+        Elementos que faltaron en los estilos básicos
+*/
+@media (min-width: 21em) { }
+
+@media (min-width: 37em) { }
+
+@media (min-width: 49em) { }
+
+@media print { }

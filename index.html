@@ -7,39 +7,117 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Guías de Estilo Base</title>
-	<link rel="stylesheet" href="css/estilos2014.css">
+	<link rel="stylesheet" href="css/guia.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<!--[if lt IE 9]>
+    <script src="bower_components/html5shiv/html5shiv.js"></script>
+    <script src="bower_components/respondJs/dest/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 <img src="http://pazvial.cl/imgs/logopazvial.png" alt="Logotipo Natur Fresh">
-<h1>Título H1 <a href="#?1">con link</a></h1>
-<p>Un corto párrafo de texto justo debajo del encabezado H1. Debemos agregar más texto y contenido para descubrir hasta donde llega el ancho de la caja del párrafo, es paráctico hacerlo también para los encabezados y bajadas de texto. Debemos enunciar un <a href="#?1">link o ancla</a> dentro del párrafo e idealmente hacer.</p>
-<p>Un segundo párrafo para hacernos una clara idea de los márgenes entre párrafos y con el siguiente encabezado. Hay gente que gusta de dar estilo al elemento <code>&lt;section></code> pero prefiero usar este espacio para difinir los elementos que van dentro del párrafo, como <small>small o pequeño</small>, <strong>strong</strong>, <b>b (bold)</b>, <em>em (emphasis)</em>, <i>i (italics o cusrivas)</i>.</p>
-<hr>
-<p>Entre el párrafo anterior y este hay un elemento <code>&lt;hr></code></p>
-<div class="corporis">
-<code>.corporis</code>
-	<h2>Subtítulo H2 <a href="#?1">con link</a></h2>
-	<p>Otro párrafo para hablar sobre otros elementos como listas, que a su vez pueden listar otros elementos:<p>
-	<ul>
-		<li><code>&lt;q></code>: <q>Ser o no ser...</q></li>
-		<li><code>&lt;kbd></code>: <kbd>cd format c:</kbd></li>
-		<li><code>&lt;samp></code>: <samp>Are you sure you want to format C? It will delete all files and folders.</samp></li>
-		<li><code>&lt;code></code>: <code>line-height:2.25em;</code></li>
-		<li><code>&lt;code class="language-css"></code>: <code class="language-css">line-height:2.25em;</code></li>
+<section class="definiciones">
+	<h2>Colores</h2>
+	<ul class="colores">
+		<li class="color">
+			<h3>Azul Paz Vial</h3>
+			<div class="muestra fAzul"></div>
+			<p class="hex">#141F78</p>
+			<p class="variable">$PazVialAzul </p>
+			<p class="descripcion"></p>
+		</li>
+		<li class="color">
+			<h3>Gris Claro</h3>
+			<div class="muestra fGrisClaro"></div>
+			<p class="hex">#F0F0F0</p>
+			<p class="variable">$grisClaro</p>
+			<p class="descripcion"></p>
+		</li>
+		<li class="color">
+			<h3>Gris Oscuro</h3>
+			<div class="muestra fGrisOscuro"></div>
+			<p class="hex">#333333</p>
+			<p class="variable">$grisOscuro</p>
+			<p class="descripcion"></p>
+		</li>
 	</ul>
-	<h3>Subtítulo H3 <a href="http://pazvial.cl/">con link (visitado)</a></h3>
-	<p>El siguiente párrafo puede tratar asuntos como la combinación de elementos en línea como <strong><em>strong>em destacado con énfasis, pero semánticamente lo encuentro un poco redundante</em></strong> en cambio <b><i>b>i —bold con itálicas—</i></b> o <i><b>i>b —itálicas con bold—</b></i> que se ven iguales, pero tienen significados semántigos distintos.</p>
-	<p>A continuación un <code>&lt;blockquote></code></p>
-	<blockquote>
-		<p>The picture element is intended to give authors a way to control which image resource a user agent presents to a user, based on media query and/or support for a particular image format.</p>
-	</blockquote>
-	<h4>Subtítulo H4 <a href="#?1">con link</a></h4>
-	<p>¿Por qué no usar lorem Ipsum? Porque diseñar sin contenido es un ejercicio incompleto. Lorem ipsum es como un bastón para alguien que no lo necesita y no corre porque tiene el bastón. Usar Lorem ipsum es un parche, que ni siquiera toma en consideración los caracteres especiales del español.</p>
-	<h5>Subtítulo H5 <a href="#?1">con link</a></h5>
-	<p>Desde hace algún tiempo ya, hemos ido eliminando completamente el uso de <i>Lorem Ipsum</i>, porque termina ocultando problemas de contenido. Muchas veces, entre el cliente y uno mismo nos conformamos con esta muletilla e ignoramos la falta del contenido, muchas veces, haste que ya es demasiado tarde. Ha pasado que ni siquiera existe el contenido que se suponía iba en el lugar llenado con texto simulado.</p>
-	<h6>Subtítulo H6 <a href="#?1">con link</a></h6>
-	<p>Aunque se puede argumentar que este mismo ejercicio es una contradicción de lo anterior. Porque estamos inventando párrafos y texto que no es contenido final, con el sólo propósito de testear los estilos gráficos de una manera genérica.</p>
-</div>
+	<hr>
+	<h2>Tipografía</h2>
+	<ul class="fonts">
+		<li class="font">
+			<h3>Font Global</h3>
+			<p class="nombre sans">Open Sans</p>
+			<p class="variable">$sans-stack</p>
+			<p class="variable"><code>.sans</code></p>
+			<ul class="specimen sans">
+				<li>Regular</li>
+				<li><i>Italic</i></li>
+				<li><b>Bold</b></li>
+				<li><b><i>Bold-Italic</i></b></li>
+			</ul>
+			<p class="descripcion"></p>
+		</li>
+		<li class="color">
+			<h3>Slab Serif</h3>
+			<p class="nombre serif">Josefin Slab</p>
+			<p class="variable">$serif-stack</p>
+			<p class="variable"><code>.serif</code></p>
+			<ul class="specimen serif">
+				<li>Regular</li>
+				<li><i>Italic</i></li>
+				<li><b>Bold</b></li>
+				<li><b><i>Bold-Italic*</i></b></li>
+			</ul>
+			<p class="descripcion"></p>
+		</li>
+		<li class="color">
+			<h3>Títulos</h3>
+			<p class="nombre display">Aracne Regular</p>
+			<p class="variable">$display-stack</p>
+			<p class="variable"><code>.display</code></p>
+			<ul class="specimen display">
+				<li>Regular</li>
+				<li><i>Italic*</i></li>
+				<li><b>Bold*</b></li>
+				<li><b><i>Bold-Italic*</i></b></li>
+			</ul>
+			<p class="descripcion">Esta tipografía debe ser usada al menos a 32px de tamaño.</p>
+		</li>
+	</ul>
+	<p><strong>Nota:</strong> Las tipografías con <b>*</b> (asterisco) no tienen una fuente cargada y es adaptada por el navegador.</p>
+</section>
+<hr>
+<section>
+	<h1>Título H1 <a href="#?1">con link</a></h1>
+	<p>Un corto párrafo de texto justo debajo del encabezado H1. Debemos agregar más texto y contenido para descubrir hasta donde llega el ancho de la caja del párrafo, es paráctico hacerlo también para los encabezados y bajadas de texto. Debemos enunciar un <a href="#?1">link o ancla</a> dentro del párrafo e idealmente hacer.</p>
+	<p>Un segundo párrafo para hacernos una clara idea de los márgenes entre párrafos y con el siguiente encabezado. Hay gente que gusta de dar estilo al elemento <code>&lt;section></code> pero prefiero usar este espacio para difinir los elementos que van dentro del párrafo, como <small>small o pequeño</small>, <strong>strong</strong>, <b>b (bold)</b>, <em>em (emphasis)</em>, <i>i (italics o cusrivas)</i>.</p>
+	<hr>
+	<p>Entre el párrafo anterior y este hay un elemento <code>&lt;hr></code></p>
+	<div class="corporis">
+	<code>.corporis</code>
+		<h2>Subtítulo H2 <a href="#?1">con link</a></h2>
+		<p>Otro párrafo para hablar sobre otros elementos como listas, que a su vez pueden listar otros elementos:<p>
+		<ul>
+			<li><code>&lt;q></code>: <q>Ser o no ser...</q></li>
+			<li><code>&lt;kbd></code>: <kbd>cd format c:</kbd></li>
+			<li><code>&lt;samp></code>: <samp>Are you sure you want to format C? It will delete all files and folders.</samp></li>
+			<li><code>&lt;code></code>: <code>line-height:2.25em;</code></li>
+			<li><code>&lt;code class="language-css"></code>: <code class="language-css">line-height:2.25em;</code></li>
+		</ul>
+		<h3>Subtítulo H3 <a href="http://pazvial.cl/">con link (visitado)</a></h3>
+		<p>El siguiente párrafo puede tratar asuntos como la combinación de elementos en línea como <strong><em>strong>em destacado con énfasis, pero semánticamente lo encuentro un poco redundante</em></strong> en cambio <b><i>b>i —bold con itálicas—</i></b> o <i><b>i>b —itálicas con bold—</b></i> que se ven iguales, pero tienen significados semántigos distintos.</p>
+		<p>A continuación un <code>&lt;blockquote></code></p>
+		<blockquote>
+			<p>The picture element is intended to give authors a way to control which image resource a user agent presents to a user, based on media query and/or support for a particular image format.</p>
+		</blockquote>
+		<h4>Subtítulo H4 <a href="#?1">con link</a></h4>
+		<p>¿Por qué no usar lorem Ipsum? Porque diseñar sin contenido es un ejercicio incompleto. Lorem ipsum es como un bastón para alguien que no lo necesita y no corre porque tiene el bastón. Usar Lorem ipsum es un parche, que ni siquiera toma en consideración los caracteres especiales del español.</p>
+		<h5>Subtítulo H5 <a href="#?1">con link</a></h5>
+		<p>Desde hace algún tiempo ya, hemos ido eliminando completamente el uso de <i>Lorem Ipsum</i>, porque termina ocultando problemas de contenido. Muchas veces, entre el cliente y uno mismo nos conformamos con esta muletilla e ignoramos la falta del contenido, muchas veces, haste que ya es demasiado tarde. Ha pasado que ni siquiera existe el contenido que se suponía iba en el lugar llenado con texto simulado.</p>
+		<h6>Subtítulo H6 <a href="#?1">con link</a></h6>
+		<p>Aunque se puede argumentar que este mismo ejercicio es una contradicción de lo anterior. Porque estamos inventando párrafos y texto que no es contenido final, con el sólo propósito de testear los estilos gráficos de una manera genérica.</p>
+	</div>
+</section>
 <div class="wrapper"><h2>Imágenes</h2>
 	<code>.wrapper</code>
 	<h3>Imagen sola</h3>

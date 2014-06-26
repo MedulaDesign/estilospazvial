@@ -39,23 +39,71 @@
 .display {
   font-family: "aracne_regularregular", Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; }
 
-.fAzul {
-  background-color: #141F78; }
-
-.cAzul {
+.PazVial {
   color: #141F78; }
 
-.fGrisClaro {
-  background-color: #F0F0F0; }
+.PazVial-bg {
+  background-color: #141F78; }
 
-.cGrisClaro {
+.azul {
+  color: #141F78; }
+
+.azul-bg {
+  background-color: #141F78; }
+
+.grisClaro {
+  color: #D6D6D6; }
+
+.grisClaro-bg {
+  background-color: #D6D6D6; }
+
+.grisMuyClaro {
   color: #F0F0F0; }
 
-.fGrisOscuro {
+.grisMuyClaro-bg {
+  background-color: #F0F0F0; }
+
+.grisOscuro {
+  color: #404040; }
+
+.grisOscuro-bg {
+  background-color: #404040; }
+
+.grisMasOscuro {
+  color: #333333; }
+
+.grisMasOscuro-bg {
   background-color: #333333; }
 
-.cGrisOscuro {
-  color: #333333; }
+.grisNegro {
+  color: #1A1A1A; }
+
+.grisNegro-bg {
+  background-color: #1A1A1A; }
+
+.ocre {
+  color: #E5CB5C; }
+
+.ocre-bg {
+  background-color: #E5CB5C; }
+
+.turquesa {
+  color: #77B7BE; }
+
+.turquesa-bg {
+  background-color: #77B7BE; }
+
+.verde {
+  color: #4D9680; }
+
+.verde-bg {
+  background-color: #4D9680; }
+
+.coral {
+  color: #D5807F; }
+
+.coral-bg {
+  background-color: #D5807F; }
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**

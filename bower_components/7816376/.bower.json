@@ -1,0 +1,13 @@
+{
+  "name": "7816376",
+  "_release": "09e1ade0a5",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "09e1ade0a5df2d49f3065ec104fa44330c5e4c84"
+  },
+  "_source": "https://gist.github.com/7816376.git",
+  "_target": "*",
+  "_originalSource": "https://gist.github.com/7816376.git",
+  "_direct": true
+}

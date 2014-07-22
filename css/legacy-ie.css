@@ -1,0 +1,5 @@
+/* esto es para IE7 y menor */
+/* line 2, ../sass/legacy-ie.scss */
+.ie {
+  display: block;
+}

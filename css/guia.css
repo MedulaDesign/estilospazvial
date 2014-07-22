@@ -1,33 +1,51 @@
+/* line 2, ../sass/guia.scss */
 .definiciones ul {
   padding: 0;
-  overflow: hidden; }
-  .definiciones ul li {
-    list-style: none; }
+  overflow: hidden;
+}
+/* line 5, ../sass/guia.scss */
+.definiciones ul li {
+  list-style: none;
+}
+/* line 9, ../sass/guia.scss */
 .definiciones .color {
   max-width: 280px;
   margin: 1em 10px;
   padding: 10px;
   border: 1px solid #999;
-  float: left; }
+  float: left;
+}
+/* line 16, ../sass/guia.scss */
 .definiciones .font {
   max-width: 520px;
   margin: 1em 10px;
   padding: 10px;
   border: 1px solid #999;
-  float: left; }
+  float: left;
+}
+/* line 23, ../sass/guia.scss */
 .definiciones h3 {
-  margin-top: 0; }
+  margin-top: 0;
+}
+/* line 26, ../sass/guia.scss */
 .definiciones .muestra {
   width: 6em;
   height: 3em;
-  border: 1px solid #777; }
+  border: 1px solid #777;
+}
+/* line 31, ../sass/guia.scss */
 .definiciones .hex, .definiciones .variable {
   border: 1px solid #bbb;
   background-color: #f0f0f0;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  padding: 1px 3px; }
+  padding: 1px 3px;
+}
+/* line 43, ../sass/guia.scss */
 .definiciones .nombre {
-  font-size: 2em; }
+  font-size: 2em;
+}
+/* line 46, ../sass/guia.scss */
 .definiciones .specimen {
-  font-size: 2em; }
+  font-size: 2em;
+}

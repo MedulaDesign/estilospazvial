@@ -124,7 +124,7 @@
 			<ul class="specimen serif">
 				<li>Regular</li>
 				<li><i>Italic</i></li>
-				<li><b>Bold</b></li>
+				<li><b>Bold*</b></li>
 				<li><b><i>Bold-Italic*</i></b></li>
 			</ul>
 			<p class="descripcion"></p>
@@ -142,8 +142,21 @@
 			</ul>
 			<p class="descripcion">Esta tipografía debe ser usada al menos a 32px de tamaño.</p>
 		</li>
+		<li class="color">
+			<h3>Títulos Slab</h3>
+			<p class="nombre slab-display">Bree Serif</p>
+			<p class="variable">$slab-display-stack</p>
+			<p class="variable"><code>.slab-display</code></p>
+			<ul class="specimen slab-display">
+				<li>Regular</li>
+				<li><i>Italic*</i></li>
+				<li><b>Bold*</b></li>
+				<li><b><i>Bold-Italic*</i></b></li>
+			</ul>
+			<p class="descripcion">Esta tipografía debe ser usada al menos a 28px de tamaño.</p>
+		</li>
 	</ul>
-	<p><strong>Nota:</strong> Las tipografías con <b>*</b> (asterisco) no tienen una fuente cargada y es adaptada por el navegador.</p>
+	<p><strong>Nota:</strong> Las tipografías con <b>*</b> (asterisco) no tienen una fuente cargada y es adaptada por el navegador. O sea, no usar en los grosores o estilos con asterisco.</p>
 </section>
 <hr>
 <section>
@@ -251,6 +264,8 @@
 			<li><label>Etiqueta 4: con el input adentro <input type="text" name="nombre4" id="nombre4" placeholder="con texto placeholder"></label>
 			<li><label for="nombre5">Etiqueta 5: Búsqueda</label>
 			<input type="search" name="nombre5" id="nombre5"></li>
+			<li><label>Etiqueta con <code>input.error</code> adentro <input type="text" name="nombre9" id="nombre9" class="error"></label></li>
+			<li><label>Etiqueta con clase <code>error</code> e input adentro <input type="text" name="nombre10" id="nombre10" class="error"></label></li>
 			<li><label for="nombre6">Etiqueta Checkbox</label>
 			<input type="checkbox" name="nombre6" id="nombre6"></li>
 			<li><label><input type="checkbox" name="nombre7" id="nombre7"> Etiqueta Checkbox con caja dentro del <code>&lt;label></code></label></li>
@@ -267,6 +282,9 @@
 			</select></li>
 			<li><input type="button" name="nombre8" id="nombre8" value="Input botón">
 			<button type="button">Button</button>
+			<button disabled>Deshabilitado</button> <code> button[disabled] </code>
+			<button>Botón de<br>
+			dos líneas</button>
 			<p>Ojo que un button debe tener <code>type="button"</code> si no se quiere que envíe automáticamente el formulario.</p></li>
 			<li>A veces es útil tener estilos para que <a href="#?1" class="button">link</a> parezca botón <code>a.button</code></li>
 			<li><textarea name="nombre7" id="nombre7" cols="30" rows="10"></textarea></li>

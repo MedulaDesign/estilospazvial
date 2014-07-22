@@ -29,6 +29,7 @@
     "html5shiv": "~3.7.2"
   },
   "devDependencies": {
+    "7816376": "https://gist.github.com/7816376.git",
     "respondJs": "~1.4.2"
   }
 }

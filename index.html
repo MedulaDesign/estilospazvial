@@ -359,5 +359,22 @@
 		<li>Marcas de edición <code>&lt;mark>&lt;del>&lt;ins></code></li>
 	</ul>
 </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>
+$(window).load(function(){
+    
+    //chiche para los formularios, no es crítico
+    setTimeout(function () {
+        var campos = $('form').find('input, textarea, select');
+        campos.focus(function (){
+            $(this).closest('li').addClass('form-focus');
+        });
+        campos.blur(function(){
+            $(this).closest('li').removeClass('form-focus');
+        });
+    }, 100);    
+    
+});
+</script>
 </body>
 </html>

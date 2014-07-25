@@ -254,39 +254,86 @@
 	<form id="unoFormo" action="./">
 		<p>Los elementos de un form, en general, son por defecto <code class="language-css">display:inline;</code> y <code class="language-css">display:inline-block;</code> por lo que es mejor meterlos dentro de un bloque para que no quede una majamama de elementos.</p>
 		<p>Personalmente prefiero las listas y en los estilos defino que los li dentro de un form se comportan parecido a un div.</p>
+
+		<p>Para <strong>Paz Vial</strong> no deben usarse <code>inputs</code> dentro de <code>&lt;label>&lt;/label></code>, siempre debe estar al lado en el siguiente formato general:</p>
+		<blockquote><code><pre>
+&lt;li>
+&lt;label for="nombre1">Etiqueta 1: para texto&lt;/label>
+&lt;input type="text" name="nombre1" id="nombre1">
+&lt;/li>
+		</pre></code></blockquote>
 		<ul>
+			
 			<li><label for="nombre1">Etiqueta 1: para texto</label>
 			<input type="text" name="nombre1" id="nombre1"></li>
+			
 			<li><label for="nombre2">Etiqueta 2: para email</label>
 			<input type="email" name="nombre2" id="nombre2"></li>
+			
 			<li><label for="nombre3">Etiqueta 3: para número</label>
 			<input type="number" name="nombre3" id="nombre3"></li>
-			<li><label>Etiqueta 4: con el input adentro <input type="text" name="nombre4" id="nombre4" placeholder="con texto placeholder"></label>
+			
 			<li><label for="nombre5">Etiqueta 5: Búsqueda</label>
 			<input type="search" name="nombre5" id="nombre5"></li>
-			<li><label>Etiqueta con <code>input.error</code> adentro <input type="text" name="nombre9" id="nombre9" class="error"></label></li>
-			<li><label>Etiqueta con clase <code>error</code> e input adentro <input type="text" name="nombre10" id="nombre10" class="error"></label></li>
-			<li><label for="nombre6">Etiqueta Checkbox</label>
-			<input type="checkbox" name="nombre6" id="nombre6"></li>
-			<li><label><input type="checkbox" name="nombre7" id="nombre7"> Etiqueta Checkbox con caja dentro del <code>&lt;label></code></label></li>
-			<li><label>Etiqueta Checkbox con caja dentro del <code>&lt;label></code>, a la derecha: <input type="checkbox" name="nombre8" id="nombre8"></label></li>
-			<li><label for="nombre11"> Etiqueta antes de: </label><input type="radio" id="nombre11" name="nombreRadios"></li>
-			<li><input type="radio" id="nombre12" name="nombreRadios"><label for="nombre12">Etiqueta después del radio</label></li>
-			<li><label><input type="radio" id="nombre13" name="nombreRadios"> Etiqueta Radio con caja dentro del <code>&lt;label></code></label></li>
-			<li><label>Etiqueta Radio con caja dentro del <code>&lt;label></code>, a la derecha: <input type="radio" id="nombre14" name="nombreRadios"></label></li>
-			<li><label for="elSelect">Etiqueta: Seleccione un número</label> <select name="elSelect">
+			
+			<li class="error"><label>li con clase <code>error</code> e input adentro</label> <input type="text" name="nombre11" id="nombre11"></li>
+
+			<li class="error"><label>li con clase <code>error</code> e input adentro</label> <input type="text" name="nombre11" id="nombre11">
+			<p>Por favor ingrese correctamente sus datos.</p>
+			</li>
+			
+			<li class="ancha"><label for="nombre4">Contenedor con clase <code>.ancha</code> o <code>.wide</code></label>
+			<input type="text" name="nombre4" id="nombre4"></li>
+
+			<li class="ancha transparente">Este es un <code>&lt;li></code> con clase <code>.transparente</code> por lo que no tiene fondo. También se pueden agregar las clases <code>.pegado</code> para un margen pequeño hacia arriba y <code>.sin-margen</code> para no tener margen hacia arriba.</li>
+
+			<li class="ancha"><p>Para los <code>input[checkbox]</code> y <code>input[radio]</code> agregaremos la clase <strong><code>.dentro</code></strong> y envolveremos los input en su label de la siguiente manera:</p>
+			<blockquote><code><pre>
+&lt;li class="dentro">
+&lt;label for="nombre6">Etiqueta para checkbox 
+&lt;input type="checkbox" name="nombre6" id="nombre6">&lt;/label>
+&lt;/li>
+		</pre></code></blockquote></li>
+
+			<li class="dentro"><label for="nombre6">Etiqueta Checkbox
+			<input type="checkbox" name="nombre6" id="nombre6"></li></label>
+			
+			<li class="dentro"><label><input type="radio" id="nombre14" name="nombreRadios"> Etiqueta Radio con <code>&lt;input></code> a la izquierda</label></li>
+
+			<li class="ancha"><p>Para múltiples <code>input[checkbox]</code> y <code>input[radio]</code> podemos una serie de <code>&lt;label></code> dentro del <code>&lt;li></code> de la siguiente manera:</p>
+			<blockquote><code><pre>
+&lt;li class="ancha dentro">
+&lt;label>&lt;input type="radio" name="grupoIn"> etiqueta 1&lt;/input>&lt;/label>
+&lt;label>&lt;input type="radio" name="grupoIn"> etiqueta 2&lt;/input>&lt;/label>
+&lt;label>&lt;input type="radio" name="grupoIn"> etiqueta 3&lt;/input>&lt;/label>
+&lt;/li>
+		</pre></code></blockquote></li>			
+			
+			<li class="ancha dentro">
+				<label><input type="radio" name="grupoIn" value="1"> etiqueta 1</input></label>
+				<label><input type="radio" name="grupoIn" value="2"> etiqueta 2</input></label>
+				<label><input type="radio" name="grupoIn" value="3"> etiqueta 3</input></label>
+				<label><input type="radio" name="grupoIn" value="4"> etiqueta 4</input></label>
+			</li>
+
+			<li><label for="elSelect">Un <code>&lt;select></code>: Seleccione un número</label> <select name="elSelect">
 				<option value="0">Seleccione...</option>
 				<option value="1">Uno</option>
 				<option value="2">Dos</option>
 				<option value="3">Tres</option>
 			</select></li>
-			<li><input type="button" name="nombre8" id="nombre8" value="Input botón">
-			<button type="button">Button</button>
+			
+			<li class="transparente"><input type="button" name="nombre8" id="nombre8" value="Input botón">
+			<button type="button">Button</button></li>
+
+			<li>
 			<button disabled>Deshabilitado</button> <code> button[disabled] </code>
 			<button>Botón de<br>
 			dos líneas</button>
 			<p>Ojo que un button debe tener <code>type="button"</code> si no se quiere que envíe automáticamente el formulario.</p></li>
-			<li>A veces es útil tener estilos para que <a href="#?1" class="button">link</a> parezca botón <code>a.button</code></li>
+			
+			<li><p>A veces es útil tener estilos <code>a.button</code> para que <a href="#?1" class="button">link</a> parezca botón</p> </li>
+			
 			<li><textarea name="nombre7" id="nombre7" cols="30" rows="10"></textarea></li>
 		</ul>
 	</form>

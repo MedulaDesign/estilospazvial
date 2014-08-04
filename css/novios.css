@@ -1,0 +1,530 @@
+@charset "CP850";
+/**
+ * Este archivo de novios es para cualquier página dentro de novios/: novios/index, novios/buscador-novios, etc...
+ */
+/* line 8, ../sass/novios.scss */
+.novios-box-codigo .link-buscar {
+  margin: 10px 0;
+}
+
+/* line 13, ../sass/novios.scss */
+.novios-error {
+  margin: 10px 0 0;
+  background-color: #d5807f;
+  color: white;
+  padding: 5px;
+}
+
+/* line 20, ../sass/novios.scss */
+.novios-box-registro {
+  border-top: 1px solid #d6d6d6;
+}
+/* line 22, ../sass/novios.scss */
+.novios-box-registro .te-casas {
+  color: #333;
+  text-decoration: none;
+}
+/* line 26, ../sass/novios.scss */
+.novios-box-registro .crea-tu-lista {
+  text-decoration: none;
+  text-align: center;
+}
+/* line 29, ../sass/novios.scss */
+.novios-box-registro .crea-tu-lista h3 {
+  padding: 5px 0;
+  color: white;
+  background-color: #333;
+  font-style: italic;
+}
+/* line 34, ../sass/novios.scss */
+.novios-box-registro .crea-tu-lista h3:hover {
+  color: #ccc;
+}
+
+/* line 42, ../sass/novios.scss */
+.novios-box-identificacion .icono, .novios-box-identificacion h2, .novios-box-codigo .icono, .novios-box-codigo h2 {
+  display: inline-block;
+}
+
+/* line 48, ../sass/novios.scss */
+.novios-box-identificacion .olvidamos-password {
+  margin: 10px 0;
+}
+/* line 52, ../sass/novios.scss */
+.novios-box-identificacion li.desktop {
+  display: none;
+}
+
+/* line 58, ../sass/novios.scss */
+.novios-one-box {
+  text-align: center;
+}
+/* line 60, ../sass/novios.scss */
+.novios-one-box figure {
+  margin: 0 auto 15px;
+}
+
+/* line 67, ../sass/novios.scss */
+.novios-registro li.desktop {
+  display: none;
+}
+
+/* line 73, ../sass/novios.scss */
+.novios-listado {
+  margin-bottom: 10px;
+}
+
+/* line 77, ../sass/novios.scss */
+.novios-listado-header {
+  display: none;
+}
+
+/* line 81, ../sass/novios.scss */
+.novios-listado-novios {
+  padding: 5px;
+}
+/* line 86, ../sass/novios.scss */
+.novios-listado-novios .novios-listado-listado-novia span:first-child,
+.novios-listado-novios .novios-listado-listado-novio span:first-child,
+.novios-listado-novios .novios-listado-listado-fecha span:first-child {
+  font-weight: bold;
+  display: block;
+}
+/* line 91, ../sass/novios.scss */
+.novios-listado-novios .novios-listado-listado-ver {
+  margin: 5px 0;
+}
+/* line 94, ../sass/novios.scss */
+.novios-listado-novios:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+/* line 101, ../sass/novios.scss */
+.novios-pagina-cabeza .cabeza-nombres h2 {
+  margin-bottom: 0;
+}
+/* line 106, ../sass/novios.scss */
+.novios-pagina-cabeza .cabeza-derecha {
+  margin-top: 10px;
+}
+/* line 111, ../sass/novios.scss */
+.novios-pagina-cabeza .cabeza-codigo h2 {
+  font-size: 1.3em;
+  margin: 0;
+}
+/* line 117, ../sass/novios.scss */
+.novios-pagina-cabeza .icono {
+  margin-top: 10px;
+  float: left;
+}
+
+/* line 123, ../sass/novios.scss */
+.novios-pagina-social {
+  max-width: 250px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+/* line 127, ../sass/novios.scss */
+.novios-pagina-social div {
+  text-align: center;
+  float: left;
+  width: 48%;
+}
+
+/* line 134, ../sass/novios.scss */
+.novios-pagina-datos {
+  clear: both;
+  overflow: hidden;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 10px;
+}
+
+/* line 142, ../sass/novios.scss */
+.novios-sin-productos {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* line 145, ../sass/novios.scss */
+.novios-sin-productos a {
+  color: white;
+  background-color: #333;
+  padding: 8px;
+  text-decoration: none;
+}
+
+/* line 153, ../sass/novios.scss */
+.novios-listado-productos {
+  background: #d3d3d3;
+}
+/* line 155, ../sass/novios.scss */
+.novios-listado-productos .quitar-producto {
+  float: right;
+  margin-top: 5px;
+}
+/* line 158, ../sass/novios.scss */
+.novios-listado-productos .quitar-producto i {
+  vertical-align: middle;
+}
+
+/* line 165, ../sass/novios.scss */
+.novios-producto-variante li {
+  border-top: 2px dotted #ACAEB0;
+  position: relative;
+  min-height: 40px;
+  padding: 5px 15px;
+  margin: 0 -15px;
+  min-height: 60px !important;
+}
+/* line 172, ../sass/novios.scss */
+.novios-producto-variante li img {
+  margin-top: 5px;
+}
+/* line 176, ../sass/novios.scss */
+.novios-producto-variante li form {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+}
+/* line 182, ../sass/novios.scss */
+.novios-producto-variante li input[type="number"] {
+  min-width: 0;
+  vertical-align: middle;
+  width: 31px;
+  height: 24px;
+}
+
+/* line 191, ../sass/novios.scss */
+.novios-etiqueta-color {
+  color: #000;
+  max-width: 90px;
+  padding-top: 2px;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 197, ../sass/novios.scss */
+.novios-etiqueta-color span {
+  display: block;
+  color: #666;
+  font-size: 0.857em;
+}
+
+/* line 204, ../sass/novios.scss */
+.novios-productos-regalados {
+  margin: 0 -15px;
+  padding: 15px;
+  color: #fff;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4d4d4f), to(#393839));
+  background-image: -webkit-linear-gradient(left, #4d4d4f, #393839);
+  background-image: linear-gradient(left, #4d4d4f, #393839);
+  display: none;
+}
+/* line 211, ../sass/novios.scss */
+.novios-productos-regalados:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 23px;
+  width: 0;
+  height: 1px;
+  border: 8px solid transparent;
+  border-top: 10px solid #FFF;
+}
+/* line 221, ../sass/novios.scss */
+.novios-productos-regalados.owner {
+  display: block;
+}
+/* line 224, ../sass/novios.scss */
+.novios-productos-regalados h3 {
+  font-size: 1em;
+  margin: 0.25em 0 0.643em 0;
+}
+/* line 228, ../sass/novios.scss */
+.novios-productos-regalados li {
+  position: relative;
+  padding: 6px 0;
+}
+/* line 232, ../sass/novios.scss */
+.novios-productos-regalados img {
+  margin-top: 4px;
+}
+/* line 235, ../sass/novios.scss */
+.novios-productos-regalados .novios-etiqueta-color {
+  color: #fff;
+}
+/* line 237, ../sass/novios.scss */
+.novios-productos-regalados .novios-etiqueta-color span {
+  display: block;
+  color: #CCC;
+}
+/* line 242, ../sass/novios.scss */
+.novios-productos-regalados .icon-regalo {
+  position: absolute;
+  top: 8px;
+  right: 11px;
+  color: white;
+  font-size: 1.6em;
+}
+
+/* line 251, ../sass/novios.scss */
+.novios-cantidad-regalada {
+  position: absolute;
+  top: 9px;
+  right: 4px;
+}
+
+/* line 257, ../sass/novios.scss */
+.novios-agregar-regalos {
+  text-align: center;
+}
+/* line 259, ../sass/novios.scss */
+.novios-agregar-regalos i {
+  font-size: 1.3em;
+}
+
+@media (min-width: 750px) {
+  /* line 267, ../sass/novios.scss */
+  .novios-box-identificacion li.desktop {
+    display: inline-block;
+  }
+
+  /* line 275, ../sass/novios.scss */
+  .novios-registro li.desktop {
+    display: inline-block;
+  }
+
+  /* line 281, ../sass/novios.scss */
+  .novios-pagina-cabeza {
+    overflow: hidden;
+  }
+  /* line 283, ../sass/novios.scss */
+  .novios-pagina-cabeza .cabeza-nombres {
+    float: left;
+  }
+  /* line 285, ../sass/novios.scss */
+  .novios-pagina-cabeza .cabeza-nombres h2 {
+    margin: 0;
+  }
+  /* line 290, ../sass/novios.scss */
+  .novios-pagina-cabeza .cabeza-derecha {
+    float: right;
+  }
+  /* line 294, ../sass/novios.scss */
+  .novios-pagina-cabeza .icono {
+    margin-left: 10px;
+  }
+
+  /* line 299, ../sass/novios.scss */
+  .novios-pagina-social {
+    float: right;
+  }
+
+  /* line 304, ../sass/novios.scss */
+  .novios-pagina-datos .izquierda {
+    float: left;
+    width: 49%;
+  }
+  /* line 308, ../sass/novios.scss */
+  .novios-pagina-datos .derecha {
+    width: 49%;
+    float: right;
+  }
+}
+@media (min-width: 900px) {
+  /* line 317, ../sass/novios.scss */
+  .novios-listado-header {
+    width: 100%;
+    display: table;
+    border-bottom: 1px solid #404040;
+  }
+  /* line 321, ../sass/novios.scss */
+  .novios-listado-header div {
+    display: table-cell;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /* line 328, ../sass/novios.scss */
+  .novios-listado-header-novia, .novios-listado-header-novio {
+    width: 25%;
+  }
+
+  /* line 332, ../sass/novios.scss */
+  .novios-listado-header-fecha {
+    width: 20%;
+  }
+
+  /* line 336, ../sass/novios.scss */
+  .novios-listado-header-ver {
+    width: 30%;
+  }
+
+  /* line 340, ../sass/novios.scss */
+  .novios-listado-novios {
+    padding: 0;
+    width: 100%;
+    display: table;
+    min-height: 60px;
+    padding-top: 5px;
+  }
+  /* line 349, ../sass/novios.scss */
+  .novios-listado-novios .novios-listado-listado-novia,
+  .novios-listado-novios .novios-listado-listado-novio,
+  .novios-listado-novios .novios-listado-listado-fecha,
+  .novios-listado-novios .novios-listado-listado-ver {
+    display: table-cell;
+  }
+  /* line 350, ../sass/novios.scss */
+  .novios-listado-novios .novios-listado-listado-novia span:first-child,
+  .novios-listado-novios .novios-listado-listado-novio span:first-child,
+  .novios-listado-novios .novios-listado-listado-fecha span:first-child,
+  .novios-listado-novios .novios-listado-listado-ver span:first-child {
+    display: none;
+  }
+  /* line 356, ../sass/novios.scss */
+  .novios-listado-novios .novios-listado-listado-novia, .novios-listado-novios .novios-listado-listado-novio {
+    width: 25%;
+  }
+  /* line 360, ../sass/novios.scss */
+  .novios-listado-novios .novios-listado-listado-novia {
+    padding-left: 5px;
+  }
+  /* line 364, ../sass/novios.scss */
+  .novios-listado-novios .novios-listado-listado-fecha {
+    width: 20%;
+    text-align: center;
+  }
+  /* line 369, ../sass/novios.scss */
+  .novios-listado-novios .novios-listado-listado-ver {
+    width: 30%;
+    text-align: center;
+  }
+}
+@media (min-width: 960px) {
+  /* line 377, ../sass/novios.scss */
+  .novios-box-codigo {
+    width: 40%;
+    float: left;
+    margin-bottom: 1em;
+    position: relative;
+    padding-right: 10px;
+  }
+  /* line 383, ../sass/novios.scss */
+  .novios-box-codigo .icono {
+    position: absolute;
+    right: 18px;
+    top: 11px;
+  }
+
+  /* line 390, ../sass/novios.scss */
+  .novios-box-registro {
+    float: left;
+    padding-left: 20px;
+    padding-bottom: 1em;
+    border-top: none;
+    border-left: 1px solid #a0a0a0;
+    max-width: 56%;
+  }
+
+  /* line 399, ../sass/novios.scss */
+  .novios-box-identificacion {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+    position: relative;
+  }
+  /* line 404, ../sass/novios.scss */
+  .novios-box-identificacion .icono {
+    position: absolute;
+    right: 80px;
+    top: 11px;
+  }
+
+  /* line 411, ../sass/novios.scss */
+  .novios-one-box {
+    width: 48%;
+    float: left;
+  }
+
+  /* line 418, ../sass/novios.scss */
+  .novios-box-identificacion form li, .novios-box-codigo form li {
+    display: block;
+    width: 100%;
+  }
+  /* line 421, ../sass/novios.scss */
+  .novios-box-identificacion form li.transparente, .novios-box-codigo form li.transparente {
+    text-align: right;
+  }
+  /* line 424, ../sass/novios.scss */
+  .novios-box-identificacion form li.desktop, .novios-box-codigo form li.desktop {
+    display: none;
+  }
+
+  /* line 433, ../sass/novios.scss */
+  .novios-pagina-datos.invitado .izquierda {
+    width: 100%;
+  }
+  /* line 436, ../sass/novios.scss */
+  .novios-pagina-datos.invitado .dato {
+    float: left;
+    min-width: 400px;
+  }
+
+  /* line 443, ../sass/novios.scss */
+  .novios-listado-productos {
+    clear: both;
+  }
+  /* line 447, ../sass/novios.scss */
+  .no-touch .novios-listado-productos .quitar-producto button {
+    background: white;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #333;
+    text-shadow: none;
+    padding: 0;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  /* line 456, ../sass/novios.scss */
+  .no-touch .novios-listado-productos .quitar-producto button i {
+    color: #a01b1b;
+    font-weight: normal;
+  }
+  /* line 461, ../sass/novios.scss */
+  .no-touch .novios-listado-productos .quitar-producto button:hover i {
+    color: #404040;
+  }
+
+  /* line 473, ../sass/novios.scss */
+  .no-touch .novios-producto-variante li button {
+    background: white;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #333;
+    font-size: 1.5em;
+    padding: 0;
+    .
+                    text-shadow: none;
+    vertical-align: middle;
+  }
+  /* line 482, ../sass/novios.scss */
+  .no-touch .novios-producto-variante li button:hover {
+    color: #141f78;
+  }
+
+  /* line 491, ../sass/novios.scss */
+  .titulo-listado h2 {
+    display: inline-block;
+    float: left;
+  }
+
+  /* line 497, ../sass/novios.scss */
+  .novios-agregar-regalos {
+    float: right;
+    text-align: left;
+    margin: 20px 5px 15px 0;
+  }
+}
